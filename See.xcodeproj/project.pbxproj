@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		FAD72B8F1FEBE7A300181513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD72B8E1FEBE7A300181513 /* AppDelegate.swift */; };
-		FAD72B911FEBE7A300181513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD72B901FEBE7A300181513 /* ViewController.swift */; };
+		FAD72B911FEBE7A300181513 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD72B901FEBE7A300181513 /* CameraVC.swift */; };
 		FAD72B941FEBE7A300181513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD72B921FEBE7A300181513 /* Main.storyboard */; };
 		FAD72B961FEBE7A300181513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD72B951FEBE7A300181513 /* Assets.xcassets */; };
 		FAD72B991FEBE7A300181513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD72B971FEBE7A300181513 /* LaunchScreen.storyboard */; };
+		FAD72BA41FEBEB6D00181513 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD72BA31FEBEB6D00181513 /* RoundedShadowView.swift */; };
+		FAD72BA61FEBED2D00181513 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD72BA51FEBED2C00181513 /* RoundedShadowButton.swift */; };
+		FAD72BA81FEBED7400181513 /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD72BA71FEBED7400181513 /* RoundedShadowImageView.swift */; };
+		FADAF08D1FECEE94000979ED /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FADAF08C1FECEE93000979ED /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAD72B8B1FEBE7A300181513 /* See.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = See.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD72B8E1FEBE7A300181513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAD72B901FEBE7A300181513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAD72B901FEBE7A300181513 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		FAD72B931FEBE7A300181513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAD72B951FEBE7A300181513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAD72B981FEBE7A300181513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAD72B9A1FEBE7A300181513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD72BA31FEBEB6D00181513 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		FAD72BA51FEBED2C00181513 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		FAD72BA71FEBED7400181513 /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
+		FADAF08C1FECEE93000979ED /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		FAD72B8D1FEBE7A300181513 /* See */ = {
 			isa = PBXGroup;
 			children = (
+				FADAF08C1FECEE93000979ED /* SqueezeNet.mlmodel */,
+				FAD72BA21FEBE7D900181513 /* Resources */,
+				FAD72BA11FEBE7CD00181513 /* View */,
+				FAD72BA01FEBE7C100181513 /* Controller */,
 				FAD72B8E1FEBE7A300181513 /* AppDelegate.swift */,
-				FAD72B901FEBE7A300181513 /* ViewController.swift */,
 				FAD72B921FEBE7A300181513 /* Main.storyboard */,
 				FAD72B951FEBE7A300181513 /* Assets.xcassets */,
 				FAD72B971FEBE7A300181513 /* LaunchScreen.storyboard */,
 				FAD72B9A1FEBE7A300181513 /* Info.plist */,
 			);
 			path = See;
+			sourceTree = "<group>";
+		};
+		FAD72BA01FEBE7C100181513 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAD72B901FEBE7A300181513 /* CameraVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAD72BA11FEBE7CD00181513 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAD72BA31FEBEB6D00181513 /* RoundedShadowView.swift */,
+				FAD72BA51FEBED2C00181513 /* RoundedShadowButton.swift */,
+				FAD72BA71FEBED7400181513 /* RoundedShadowImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAD72BA21FEBE7D900181513 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD72B911FEBE7A300181513 /* ViewController.swift in Sources */,
+				FAD72B911FEBE7A300181513 /* CameraVC.swift in Sources */,
+				FADAF08D1FECEE94000979ED /* SqueezeNet.mlmodel in Sources */,
 				FAD72B8F1FEBE7A300181513 /* AppDelegate.swift in Sources */,
+				FAD72BA41FEBEB6D00181513 /* RoundedShadowView.swift in Sources */,
+				FAD72BA61FEBED2D00181513 /* RoundedShadowButton.swift in Sources */,
+				FAD72BA81FEBED7400181513 /* RoundedShadowImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M5TDGZ5AMX;
 				INFOPLIST_FILE = See/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "O-Dev.See";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M5TDGZ5AMX;
 				INFOPLIST_FILE = See/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "O-Dev.See";
 				PRODUCT_NAME = "$(TARGET_NAME)";
